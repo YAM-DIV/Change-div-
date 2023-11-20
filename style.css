@@ -1,0 +1,289 @@
+
+/* Start Variables */
+:root {
+  --blue-color: #263440;
+  --yellow-color: #FFD700;
+  --red-color: #DB3F39;
+  --white-color: white;
+}
+/* End Variables */
+* {
+  --webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+*::selection {
+  background-color: var(--blue-color);
+}
+
+
+/* Start Section click */
+.titel-package h1{
+  color: var(--blue-color);
+  padding-top: 20px;
+}
+
+.main_container {
+  margin: 15px auto;
+  background: var(--white-color);
+  width: 90%;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+
+#btn_diva {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-size: 18px;
+  padding: 5px 30px;
+  border: 1px solid var(--blue-color);
+}
+
+#btn_diva:focus {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+#btn_diva:hover {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+#btn_divb {
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 5px 30px;
+  border: 1px solid var(--yellow-color);
+}
+
+#btn_divb:focus {
+  color: var(--yellow-color);
+  background-color: var(--white-color);
+}
+
+#btn_divb:hover {
+  color: var(--yellow-color);
+  background-color: var(--white-color);
+}
+
+.blocks {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.diva {
+  width: 100%;
+  height: auto;
+  background: var(--white-color);
+  display: block;
+  padding: 20px;
+}
+
+.divb {
+  width: 100%;
+  height: auto;
+  background: var(--white-color);
+  display: none;
+  padding: 20px;
+}
+/* Start section Package */
+.continer-larg {
+  max-width: 90%;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.Package {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Package .price-card{
+  background-color: var(--blue-color);
+  padding: 20px 0;
+  color: var(--white-color);
+}
+
+.Package .price-card h1 {
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
+.Package .price-card h3 {
+  font-size: 25px;
+}
+
+.Package .price-card p {
+  font-size: 18px;
+  position: relative;
+}
+
+.Package .price-card p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  right: 0;
+  z-index: -1;
+  height: 83px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: var(--blue-color);
+}
+
+.Package .row {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.Package .col {
+  border: 1px solid var(--blue-color);
+  text-align: center;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.Package .col:hover {
+  transform: scale(1.1);
+}
+
+.Package .col .information-card ul {
+  padding: 50px 15px;
+  /* height: 50%; */
+}
+
+.Package .col .information-card li{
+  text-align: center;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.Package .col .information-card .buy-now {
+  padding-bottom: 15%;
+}
+
+.Package .col .information-card .buy-now a {
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  padding: 10px 30px;
+  color: var(--white-color);
+  transition: .4s;
+}
+
+.Package .col .information-card .buy-now a:hover {
+  background-color: transparent;
+  color: var(--blue-color);
+}
+/* Start section Package */
+/* Start section Package-gold */
+.Package-gold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Package-gold .price-card-gold {
+  background-color: var(--yellow-color);
+  padding: 20px 0;
+  color: var(--white-color);
+}
+
+.Package-gold .price-card-gold h1 {
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+
+.Package-gold .price-card-gold h3 {
+  font-size: 25px;
+}
+
+.Package-gold .price-card-gold p {
+  font-size: 18px;
+  position: relative;
+}
+
+.Package-gold .price-card-gold p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  right: 0;
+  z-index: -1;
+  height: 83px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: var(--yellow-color);
+}
+
+.Package-gold .row {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.Package-gold .col {
+  border: 1px solid var(--yellow-color);
+  text-align: center;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.Package-gold .col:hover {
+  transform: scale(1.1);
+}
+
+.Package-gold .col .information-card-gold ul {
+  padding: 50px 15px;
+  /* height: 50%; */
+}
+
+.Package-gold .col .information-card-gold li{
+  text-align: center;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.Package-gold .col .information-card-gold .buy-now-gold {
+  padding-bottom: 15%;
+}
+
+.Package-gold .col .information-card-gold .buy-now-gold a {
+  background-color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
+  padding: 10px 30px;
+  color: var(--white-color);
+  transition: .4s;
+}
+
+.Package-gold .col .information-card-gold .buy-now-gold a:hover {
+  background-color: transparent;
+  color: var(--yellow-color);
+}
+/* End section Package-gold */
+/* End Section click */
